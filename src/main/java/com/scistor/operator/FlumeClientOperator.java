@@ -39,20 +39,27 @@ public class FlumeClientOperator {
             e.printStackTrace();
         }
     }
-    public static void sendDataToFlume(String data) {
+    public static void sendDataToFlume(String data) throws Exception {
         // Create a Flume Event object that encapsulates the sample data
         Event event = EventBuilder.withBody(data, Charset.forName("UTF-8"));
 
         // Send the event
         try {
-            client.append(event);
+            if(client.isActive()) {
+                client.append(event);
+            }else{
+                client.close();
+                client = null;
+                client = RpcClientFactory.getInstance(props);
+                client.append(event);
+            }
 //            System.out.println("send event");
         } catch (EventDeliveryException e) {
-            // clean up and recreate the client
-            client.close();
-            client = null;
-            client = RpcClientFactory.getInstance(props);
-            System.out.println("reconnect!");
+            System.out.println("THIS IS FLUME CLIENT , WE ARE FACING AN EventDeliveryException");
+            throw new Exception(e);
+        }catch (Exception e){
+            System.out.println("THIS IS FLUME CLIENT , WE ARE FACING AN Exception");
+            throw new Exception(e);
         }
     }
 

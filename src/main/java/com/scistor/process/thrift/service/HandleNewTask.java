@@ -3,24 +3,23 @@ package com.scistor.process.thrift.service;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-import java.net.URLClassLoader;
+import java.net.*;
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Callable;
 
 import com.scistor.ETL.TransformInterface;
+import com.scistor.operator.ZookeeperOperator;
+import com.scistor.utils.TaskResult;
 import org.apache.log4j.Logger;
+import org.apache.zookeeper.ZooKeeper;
 
-public class HandleNewTask implements Runnable{
+public class HandleNewTask implements Callable<String> {
 	private HashMap<String, String> element;
 	private static final Logger LOG = Logger.getLogger(HandleNewTask.class);
 	public  ClassLoader classLoader=null;
 	private ArrayBlockingQueue<Map> queue = null;
 	private String PRODUCE_PATH;//必须是实例 变量
-
 	public HandleNewTask(Map<String, String> element, ArrayBlockingQueue<Map> queue, String prodece_flag) {
 		super();
 		this.element = (HashMap<String, String>) element;
@@ -29,7 +28,7 @@ public class HandleNewTask implements Runnable{
 
 		Properties props = new Properties();
 		try {
-			props.load(SlaveServiceImpl.class.getClassLoader().getResourceAsStream("config.properties"));
+			props.load(HandleNewTask.class.getClassLoader().getResourceAsStream("config.properties"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -55,14 +54,14 @@ public class HandleNewTask implements Runnable{
 			classLoader=new URLClassLoader(urls,Thread.currentThread().getContextClassLoader());
 		}
 	}
-
 	@Override
-	public void run() {
+	public String call() throws Exception {
 		try {
 			long startTime = 0;
 			long endTime = 0;
 			String mainclass = element.get("mainclass");
 			String task_type = element.get("task_type");
+
 			element.put("PRODUCE_PATH",PRODUCE_PATH);
 			LOG.info("process " + mainclass);
 			Class reflectClass = classLoader.loadClass(mainclass);
@@ -76,8 +75,17 @@ public class HandleNewTask implements Runnable{
 			}
 		}catch (Exception e){
 			LOG.error(e.toString());
-			e.printStackTrace();
+			String task_id = element.get("taskId");
+			String mainclass = element.get("mainclass");
+			TaskResult tr = new TaskResult(task_id,mainclass,true,e.toString());
+			ZookeeperOperator.updateTaskResult(null,task_id,mainclass,tr);
+			throw new RuntimeException("HandleNewTask capchured a exception :" + this.getClass().getName() + e);
 		}
 
+		String task_id = element.get("taskId");
+		String mainclass = element.get("mainclass");
+		TaskResult tr = new TaskResult(task_id,mainclass,true,"data parse succ");
+		ZookeeperOperator.updateTaskResult(null,task_id,mainclass,tr);
+		return null;
 	}
 }

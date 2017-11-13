@@ -35,13 +35,19 @@ public class StartSlaveServer {
         // TODO Auto-generated method stub
         Properties props = new Properties();
         try {
-            props.load(new FileInputStream("config.properities"));
+            props.load(StartSlaveServer.class.getClassLoader().getResourceAsStream("config.properties"));
             PORT = Integer.parseInt(props.getProperty("thrift_slaveserver_port"));
             SLAVES_THREAD_POOL_SIZE = Integer.parseInt(props.getProperty("thread_pool_size"));
             SLAVE_IP_DIR = props.getProperty("thrift_slaveserver_dir");
             IP = InetAddress.getLocalHost().getHostAddress();
             start(args);
         } catch (Exception e) {
+            String path = SLAVE_IP_DIR + IP + ":" + PORT;
+            try {
+                ZookeeperOperator.delete(path," ");
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
             LOG.error(e.toString());
             e.printStackTrace();
         }
@@ -68,7 +74,7 @@ public class StartSlaveServer {
         TThreadedSelectorServer server=new TThreadedSelectorServer(m_args);
         LOG.info("ip:host send to zk");
         String path = SLAVE_IP_DIR + IP + ":" + PORT;
-        ZookeeperOperator.registerSlaveInfo(path,path);
+        ZookeeperOperator.registerSlaveInfo(path,path,"PERSISTENT");
         LOG.info("server starting...");
         System.out.println("server starting...");
 

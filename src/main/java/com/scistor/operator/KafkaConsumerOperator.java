@@ -1,5 +1,6 @@
-package com.scistor.process;
+package com.scistor.operator;
 
+import com.scistor.operator.ZookeeperOperator;
 import kafka.consumer.Consumer;
 import kafka.consumer.ConsumerConfig;
 import kafka.consumer.ConsumerIterator;

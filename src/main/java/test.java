@@ -1,8 +1,14 @@
+import com.scistor.operator.DataParserOperator;
 import com.scistor.operator.FlumeClientOperator;
 import com.scistor.operator.ZookeeperOperator;
+import com.scistor.process.thrift.service.SlaveServiceImpl;
+import com.scistor.utils.ExceptionHandler;
+import com.scistor.utils.TaskResult;
+import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 
-import java.util.Properties;
+import java.io.File;
+import java.util.*;
 
 public class test {
     public static void main(String[] args) throws Exception {
@@ -22,26 +28,63 @@ public class test {
         System.out.println(props.toString());
 
         //zookeeper test
-        System.out.println(ZookeeperOperator.checkPath("/zookeeper/01"));
-        ZookeeperOperator.registerSlaveInfo("/zookeeper/01","aaaaaaaaaaa");
-        ZookeeperOperator.delete("/zookeeper/01","aaaaaaaaaaa");
-//        ZookeeperOperator.registerSlaveInfo("/HS/1","aaaaaaaaaaa");
-//        ZookeeperOperator.registerSlaveInfo("/HS/1/1","aaaaaaaaaaa");
-//        ZookeeperOperator.registerSlaveInfo("/HS/1/1/produce","aaaaaaaaaaa");
-        System.out.println(ZookeeperOperator.getZk().getChildren("/HS/1/1/produce",null));
-        Stat stat = new Stat();
-        System.out.println(ZookeeperOperator.getZk().getData("/HS/1/1/produce",null,stat));
-        System.out.println(ZookeeperOperator.getZk().setData("/HS/1/1/produce",null,-1));
-        System.out.println(stat.getAversion());
-        ZookeeperOperator.delete("/HS/1/1/produce","aaaaaaaaaaa");
-        System.out.println(ZookeeperOperator.checkPath("/HS/1/1/produce"));
-        //flume client test
-        for(int i=0; i<1; i++) {
-            FlumeClientOperator.sendDataToFlume("this is a client test");
-//            Thread.sleep(1000);
-//            System.out.println("send" + i);
-        }
-        FlumeClientOperator.cleanUp();
-        System.exit(0);
+//        System.out.println(ZookeeperOperator.checkPath("/zookeeper/01"));
+//        ZookeeperOperator.registerSlaveInfo("/zookeeper/01","aaaaaaaaaaa","PERSISTENT");
+//        ZookeeperOperator.delete("/zookeeper/01","aaaaaaaaaaa");
+////        ZookeeperOperator.registerSlaveInfo("/HS/1","aaaaaaaaaaa");
+////        ZookeeperOperator.registerSlaveInfo("/HS/1/1","aaaaaaaaaaa");
+////        ZookeeperOperator.registerSlaveInfo("/HS/1/1/produce","aaaaaaaaaaa");
+//        System.out.println(ZookeeperOperator.getZk().getChildren("/HS/1/1/produce",null));
+//        Stat stat = new Stat();
+//        System.out.println(ZookeeperOperator.getZk().getData("/HS/1/1/produce",null,stat));
+//        System.out.println(ZookeeperOperator.getZk().setData("/HS/1/1/produce",null,-1));
+//        System.out.println(stat.getAversion());
+//        ZookeeperOperator.delete("/HS/1/1/produce","aaaaaaaaaaa");
+//        System.out.println(ZookeeperOperator.checkPath("/HS/1/1/produce"));
+//        //flume client test
+//        for(int i=0; i<10; i++) {
+//            try {
+//                FlumeClientOperator.sendDataToFlume("this is a client test");
+////                Thread.sleep(1000);
+//                FlumeClientOperator.sendDataToFlume("this is a client test");
+//            }catch (Exception e){
+//                System.out.println("flume client error");
+//                e.printStackTrace();
+//            }
+////            System.out.println("send" + i);
+//        }
+//        FlumeClientOperator.cleanUp();
+//        System.exit(0);
+//        File dir = new File("sdf");
+//        System.out.println(dir.isDirectory());
+//
+        //开始数据生产线程
+        List<Map<String, String>> elements = new ArrayList<Map<String, String>>();
+
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.operator.DataParserOperator");
+//                put("filedir","E:\\01\\");
+                put("filedir","阿斯蒂芬");
+                put("taskId","76c69097-57ef-4128-b708-8704f1ff3ca8");
+            }
+        });
+        Thread producer=new Thread();
+        DataParserOperator dp = new DataParserOperator();
+        dp.init(elements.get(0),null);
+        producer = new Thread(dp);
+        producer.setUncaughtExceptionHandler(new ExceptionHandler());
+        producer.start();
+        producer.join();
+
+//        String task_id = "76c69097-57ef-4128-b708-8704f1ff3ca8";
+//        String mainclass = "com.scistor.operator.DataParserOperator";
+//        TaskResult tr = new TaskResult(task_id,mainclass,true,"test");
+//        ZooKeeper zk = ZookeeperOperator.getZk();
+//        ZookeeperOperator.updateTaskResult(zk,null,task_id,mainclass,tr);
+//        zk.close();
+        System.out.println("end");
     }
+
+
 }

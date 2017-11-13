@@ -33,54 +33,58 @@ public class Main {
     private static ArrayBlockingQueue<Map> queue = new ArrayBlockingQueue<Map>(2000);
     public static void main(String[] args) throws Exception{
 
-        //获取文件列表
-        getFileList(unZipHeaser);
-        System.out.println("file sum :" + filelist.size());
-        if(filelist.size()==0){
-            System.out.println("none files exist");
-            System.exit(0);
-        }
         List<Map<String, String>> elements = new ArrayList<Map<String, String>>();
-        for(File f:filelist){
-            final String fdir = f.getAbsolutePath();
-            elements.add(new HashMap<String, String>(){
-                {
-                    put("mainclass","com.scistor.operator.DataParserOperator");
-                    put("filedir",fdir);
-                }
-            });
-            elements.add(new HashMap<String, String>(){
-                {
-                    put("mainclass","com.scistor.ETL.operator.HostFind");
-                    put("Host","com.scistor.ETL.operator.HostFind");
-                    put("task_type","producer");
-                }
-            });
-            elements.add(new HashMap<String, String>(){
-                {
-                    put("mainclass","com.scistor.ETL.operator.HostFind");
-                    put("Host","com.scistor.ETL.operator.HostFind");
-                    put("task_type","producer");
-                }
-            });
-            elements.add(new HashMap<String, String>(){
-                {
-                    put("mainclass","com.scistor.ETL.operator.HostFind");
-                    put("Host","com.scistor.ETL.operator.HostFind");
-                    put("task_type","producer");
-                }
-            });
-            elements.add(new HashMap<String, String>(){
-                {
-                    put("mainclass","com.scistor.ETL.operator.HostFind");
-                    put("Host","com.scistor.ETL.operator.HostFind");
-                    put("task_type","consumer");
-                }
-            });
-            SlaveServiceImpl sel = new SlaveServiceImpl();
-            sel.addSubTask(elements,"1",1,true);
-            break;
+
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.operator.DataParserOperator");
+                put("filedir",unZipHeaser);
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("Host","com.scistor.ETL.operator.HostFind");
+                put("task_type","producer");
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("Host","com.scistor.ETL.operator.HostFind");
+                put("task_type","producer");
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("Host","com.scistor.ETL.operator.HostFind");
+                put("task_type","producer");
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("Host","com.scistor.ETL.operator.HostFind");
+                put("task_type","consumer");
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        SlaveServiceImpl sel = new SlaveServiceImpl();
+        String result = " ";
+        try {
+            result = sel.addSubTask(elements, "7d6c6cff-7894-4a81-99f0-873ef0fc60ca", "172.16.1.153:8089", true);
+        }catch (Exception e){
+            System.out.println("this is Main");
+            e.printStackTrace();
+            System.out.println(e.toString());
         }
+        System.out.println("TEST Main is done "  + result);
+//        System.exit(0);
 //        System.out.println(System.getProperty("com.scistor.operator.DataParserOperator"));
 //        ClassLoader cl = new ClassLoader() {
 //            @Override
@@ -91,30 +95,4 @@ public class Main {
 //        System.out.println(cl.loadClass("org.apache.log4j.Logger"));
 //        System.out.println(cl.loadClass("com.scistor.ETL.operator.HostFind"));
     }
-
-
-
-    public static  void getFileList(String strPath) {
-        File dir = new File(strPath);
-        File[] files = dir.listFiles(); // 该文件目录下文件全部放入数组
-        if (files != null) {
-            for (int i = 0; i < files.length; i++) {
-                String fileName = files[i].getName();
-                if (files[i].isDirectory()) { // 判断是文件还是文件夹
-                    getFileList(files[i].getAbsolutePath()); // 获取文件绝对路径
-                } else if (fileName.endsWith("zip")) { // 判断文件名是否以.avi结尾
-                    String strFileName = files[i].getAbsolutePath();
-//                    System.out.println("---" + strFileName);
-                    filelist.add(files[i]);
-                } else {
-                    continue;
-                }
-            }
-
-        }
-//        System.out.println(filelist.size());
-    }
-
-
-
 }
