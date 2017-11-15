@@ -1,3 +1,4 @@
+package com.scistor.process;
 import com.scistor.operator.FlumeClientOperator;
 
 public class flumeTest {

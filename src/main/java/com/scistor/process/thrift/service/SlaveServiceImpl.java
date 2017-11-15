@@ -47,8 +47,10 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 				LOG.info("this is a machine include consumer");
 			}
 			test_Showelements(elements);
-			//添加线程池
+			//添加算子生产数据线程池
 			ExecutorService threads= Executors.newFixedThreadPool(elements.size());
+			//添加算子消费数据线程
+			FutureTask<String> task = null;
 			//添加队列列表
 			queueList = new ArrayList<ArrayBlockingQueue<Map>>();
 			for (int i=0;i<(consumer?elements.size()-2:elements.size()-1);i++){
@@ -73,8 +75,10 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 						HandleNewTask handnew = new HandleNewTask(elements.get(i), queueList.get(i - 1), PRODUCE_PATH);
 						futureList.add(threads.submit(handnew));
 					}else if(elements.get(i).get("task_type").equals("consumer")) {
-						HandleNewTask handnew = new HandleNewTask(elements.get(i), queueList.get(i - 1), path);
-						futureList.add(threads.submit(handnew));
+						//设置消费线程
+						HandleNewTask handnew = new HandleNewTask(elements.get(i), null, path);
+						task = new FutureTask<String>(handnew);
+						new Thread(task, "有返回值的线程").start();
 					}
 				}catch (Exception e){
 					LOG.error(e.toString());
@@ -117,12 +121,20 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 			LOG.info("总共用时:"+ currentHour+"h"+currentMinute+"m"+currentSecond + "s");
 			//删除zk目录
 			ZookeeperOperator.delete(path, taskId);
+			//监控算子消费线程是否完成
+			try {
+				// 获取线程返回值
+				System.out.println("子线程的返回值：" + task.get());
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
 			//返回
 			System.out.println("SLAVER WORKING IS DONE!!!");
 			return "success";
 
 		}catch (Exception e){
-			LOG.error(e.toString());
+			e.printStackTrace();
+			LOG.error(e.getMessage());
 			System.out.println("we are going to clean env and exist...");
 			//CLEARN SYSTEM
 			try {

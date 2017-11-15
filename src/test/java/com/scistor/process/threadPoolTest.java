@@ -1,3 +1,4 @@
+package com.scistor.process;
 import com.scistor.process.thrift.service.HandleNewTask;
 import com.scistor.utils.ExceptionHandler;
 import scala.concurrent.impl.ExecutionContextImpl;

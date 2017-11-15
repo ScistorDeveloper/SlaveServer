@@ -36,7 +36,9 @@ public class HostFind implements TransformInterface{
                 if(queue.size()>0) {
                     LOG.info("i have some data " +queue.size());
                     System.out.println("i have some data " +queue.size());
-                    queue.take();
+                    for(int i=0; i<queue.size(); i++) {
+                        queue.take();
+                    }
                 }else {
 
                     //检查数据解析线程是不已经完成
@@ -63,6 +65,14 @@ public class HostFind implements TransformInterface{
          * 为保证正常停止，必须为阻塞型线程
          * 条件为kafka中没有数据即停止
          */
+        //检查数据解析线程是不已经完成
+        if(!ZookeeperOperator.checkPath(PRODUCE_PATH)){
+            LOG.info("数据生产结束，退出");
+            System.out.println("数据生产结束，退出");
+            is_continue=false;
+        }else{
+            System.out.println(PRODUCE_PATH);
+        }
         System.out.println("you are calling merge :" + this.getClass().getName());
         throw new RuntimeException("consume exception test");
     }

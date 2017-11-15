@@ -50,6 +50,14 @@ public class StartSlaveServer {
             }
             LOG.error(e.toString());
             e.printStackTrace();
+        }finally {
+
+            String path = SLAVE_IP_DIR + IP + ":" + PORT;
+            try {
+                ZookeeperOperator.delete(path," ");
+            } catch (Exception e1) {
+                e1.printStackTrace();
+            }
         }
     }
 

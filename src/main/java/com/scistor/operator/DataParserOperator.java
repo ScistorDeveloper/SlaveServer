@@ -59,7 +59,8 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                 throw new RuntimeException(e.toString());
             }
         }
-        TaskResult tr = new TaskResult(task_id,mainclass,true,"data parse succ");
+        TaskResult tr = new TaskResult(task_id,mainclass,true,"data parse succ,totle parsed "+parsedCount + "line data, and neglected " + neglectedCount
+                +" lines data!! data ");
         try {
             ZookeeperOperator.updateTaskResult(null,task_id,mainclass,tr);
         } catch (Exception e1) {
@@ -103,10 +104,11 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                         FlumeClientOperator.sendDataToFlume(line);
                         FlumeClientOperator.cleanUp();
                     }catch (Exception e){
-                        throw new Exception(e);
+                        LOG.error("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
+                        System.out.println("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
                     }
                     parsedCount ++;
-                    if(parsedCount%500==0){
+                    if(parsedCount%5000==0){
                         LOG.info(Thread.currentThread().getName() + " has been parsed " + parsedCount + " lines data!");
                     }
 
@@ -162,7 +164,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                     }
                 }catch (Exception e){
                     //数据乱码等问题
-                    LOG.error("数据乱码？没有返回JSON？ " + line);
+                    LOG.debug("数据乱码？没有返回JSON？ " + url);
                     neglectedCount ++;
                     return null;
                 }
