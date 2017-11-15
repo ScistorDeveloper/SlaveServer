@@ -40,6 +40,7 @@ public class HandleNewTask implements Callable<String> {
 				return arg0.getName().endsWith(".jar");
 			}
 		});
+		files=compenents.listFiles();
 		URL[] urls=new URL[files==null?0:files.length];
 		for(int i=0;i<files.length;i++){
 			try {

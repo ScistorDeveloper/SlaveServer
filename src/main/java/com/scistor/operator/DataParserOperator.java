@@ -23,6 +23,9 @@ public class DataParserOperator implements DataParseInterface, Runnable{
     private String filedir;
     private List<ArrayBlockingQueue<Map>> queueList;
     private Map<String,String> element;
+    private static List<File> filelist = new ArrayList<File>();
+    private int parsedCount=0;
+    private static int neglectedCount = 0;
     public void DataParserOperator(){
     }
     @Override
@@ -39,7 +42,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
         String task_id = element.get("taskId");
         String mainclass = element.get("mainclass");
         filelist = getFileList(task_id,filedir);
-        LOG.info("this is parse test " + filelist.size());
+        LOG.info("parse operation got " + filelist.size() + " files");
         for(File file : filelist) {
             try {
                 dataParse(file);
@@ -84,7 +87,10 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(is));
                     //解析数据
                     Map<String,String> data = getMap(bufferedReader);
-
+                    //数据为空，无操作
+                    if(data==null){
+                        continue;
+                    }
                     //放入数据队列，算子使用
                     for (int i=0;i<queueList.size();i++) {
                         queueList.get(i).put(data);
@@ -95,8 +101,13 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                     try {
                         String line = Map2String.transMapToString(data);
                         FlumeClientOperator.sendDataToFlume(line);
+                        FlumeClientOperator.cleanUp();
                     }catch (Exception e){
                         throw new Exception(e);
+                    }
+                    parsedCount ++;
+                    if(parsedCount%500==0){
+                        LOG.info(Thread.currentThread().getName() + " has been parsed " + parsedCount + " lines data!");
                     }
 
                 }
@@ -150,7 +161,10 @@ public class DataParserOperator implements DataParseInterface, Runnable{
 
                     }
                 }catch (Exception e){
-                    e.printStackTrace();
+                    //数据乱码等问题
+                    LOG.error("数据乱码？没有返回JSON？ " + line);
+                    neglectedCount ++;
+                    return null;
                 }
             } else {
                 //POST DATA
@@ -177,7 +191,6 @@ public class DataParserOperator implements DataParseInterface, Runnable{
 
 
     public static  List<File> getFileList(String taskid, String strPath) {
-        List<File> filelist = new ArrayList<File>();
         File dir = new File(strPath);
         if(!dir.isDirectory()){
             throw new RuntimeException(DataParserOperator.class.getName() + "||" + taskid + "||" + "PATH is not LEGAL");
@@ -188,7 +201,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                 String fileName = files[i].getName();
                 if (files[i].isDirectory()) { // 判断是文件还是文件夹
                     getFileList(taskid,files[i].getAbsolutePath()); // 获取文件绝对路径
-                } else if (fileName.endsWith("zip")) { // 判断文件名是否以.avi结尾
+                } else if (fileName.endsWith("zip")) { // 判断文件名是否以.zip结尾
                     String strFileName = files[i].getAbsolutePath();
 //                    System.out.println("---" + strFileName);
                     filelist.add(files[i]);

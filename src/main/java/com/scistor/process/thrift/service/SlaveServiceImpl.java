@@ -51,9 +51,10 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 			ExecutorService threads= Executors.newFixedThreadPool(elements.size());
 			//添加队列列表
 			queueList = new ArrayList<ArrayBlockingQueue<Map>>();
-			for (int i=0;i<elements.size()-1;i++){
+			for (int i=0;i<(consumer?elements.size()-2:elements.size()-1);i++){
 				queueList.add(new ArrayBlockingQueue<Map>(QUEUE_SIZE));
 			}
+			System.out.println("create queue list size " + queueList.size());
 			//开始数据生产线程
 			Thread producer=new Thread();
 			DataParserOperator dp = new DataParserOperator();
@@ -91,7 +92,8 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 				try{
 					f.get();
 				}catch (Exception e){
-					System.out.println("this Main  and Future captured a new exception " + e);
+					System.out.println("this Main  and Future captured a new exception ");
+					e.printStackTrace();
 					//export exception
 					return e.toString();
 				}
@@ -150,11 +152,16 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 	public String updateClassLoader(String componentLocation, String componentName, ByteBuffer componentInfo) throws TException {
 		FileOutputStream fos;
 		try {
-			fos = new FileOutputStream(componentLocation + File.separator + componentName + "_sub.jar");
+			File file = new File(componentLocation + File.separator + componentName + "_sub.jar");
+			if (!file.getParentFile().exists()) {
+				file.getParentFile().mkdirs();
+			}
+			fos = new FileOutputStream(file);
 			fos.write(componentInfo.array());
 			fos.flush();
 			fos.close();
 		} catch (Exception e) {
+			LOG.error(e);
 			return "-100";
 		}
 		return "0";

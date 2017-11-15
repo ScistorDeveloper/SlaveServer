@@ -5,9 +5,9 @@ import com.scistor.operator.ZookeeperOperator;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Callable;
 
 public class HostFind implements TransformInterface{
     private String host;
@@ -23,8 +23,9 @@ public class HostFind implements TransformInterface{
     }
 
     @Override
-    public void validate() {
+    public List<String> validate() {
 
+        return null;
     }
 
     @Override

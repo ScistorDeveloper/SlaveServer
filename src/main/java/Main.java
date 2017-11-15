@@ -24,7 +24,7 @@ import java.util.zip.ZipInputStream;
 public class Main {
 
     private static final Logger log = Logger.getLogger(Main.class);
-    private static String unZipHeaser = "E:\\01\\";
+    private static String unZipHeaser = "E:\\Project1\\HS\\02 数据资料\\170811\\";
     private static String dstPath = "E:\\tmp\\upload.txt";
     private static ExecutorService fixedThreadPool;
     private static List<File> filelist = new ArrayList<File>();
@@ -44,7 +44,15 @@ public class Main {
         });
         elements.add(new HashMap<String, String>(){
             {
-                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("mainclass","com.scistor.operator.GeneratePasswordBook");
+                put("Host","com.scistor.ETL.operator.HostFind");
+                put("task_type","producer");
+                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
+            }
+        });
+        elements.add(new HashMap<String, String>(){
+            {
+                put("mainclass","com.scistor.operator.GeneratePasswordBook");
                 put("Host","com.scistor.ETL.operator.HostFind");
                 put("task_type","producer");
                 put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
@@ -60,15 +68,7 @@ public class Main {
         });
         elements.add(new HashMap<String, String>(){
             {
-                put("mainclass","com.scistor.ETL.operator.HostFind");
-                put("Host","com.scistor.ETL.operator.HostFind");
-                put("task_type","producer");
-                put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
-            }
-        });
-        elements.add(new HashMap<String, String>(){
-            {
-                put("mainclass","com.scistor.ETL.operator.HostFind");
+                put("mainclass","com.scistor.operator.GeneratePasswordBook");
                 put("Host","com.scistor.ETL.operator.HostFind");
                 put("task_type","consumer");
                 put("taskId","dd70842d-a946-47b7-afeb-8ded58a73432");
