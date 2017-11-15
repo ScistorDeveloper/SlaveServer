@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03283c8c-cc0b-41e4-905f-c526f31a4353" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/main1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/zkTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/scistor/process/AppTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Main$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Main$5.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataEtl_Log4j.log.1" afterPath="$PROJECT_DIR$/DataEtl_Log4j.log.1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$2.class" afterPath="$PROJECT_DIR$/target/classes/Main$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main$3.class" afterPath="$PROJECT_DIR$/target/classes/Main$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/scistor/ETL/operator/HostFind.class" afterPath="$PROJECT_DIR$/target/classes/com/scistor/ETL/operator/HostFind.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/scistor/operator/DataParserOperator.class" afterPath="$PROJECT_DIR$/target/classes/com/scistor/operator/DataParserOperator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/server/StartSlaveServer.class" afterPath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/server/StartSlaveServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/service/HandleNewTask.class" afterPath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/service/HandleNewTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/service/SlaveServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/scistor/process/thrift/service/SlaveServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test$1.class" afterPath="$PROJECT_DIR$/target/classes/test$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/test.class" afterPath="$PROJECT_DIR$/target/classes/test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataEtl_Log4j.log" afterPath="$PROJECT_DIR$/DataEtl_Log4j.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SlaveServer.iml" afterPath="$PROJECT_DIR$/SlaveServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scistor/ETL/operator/HostFind.java" afterPath="$PROJECT_DIR$/src/main/java/com/scistor/ETL/operator/HostFind.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java" afterPath="$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/server/StartSlaveServer.java" afterPath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/server/StartSlaveServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/service/HandleNewTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/service/HandleNewTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/service/SlaveServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/service/SlaveServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/flumeTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/flumeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/threadPoolTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/scistor/process/threadPoolTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,16 +15,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataParserOperator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataParserOperator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="107" column="44" lean-forward="false" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
+            <state relative-caret-position="437">
+              <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#949#955#0" expanded="true" />
-                <element signature="e#1515#1521#0" expanded="true" />
-                <element signature="e#5246#5254#0" expanded="true" />
+                <element signature="e#1552#1558#0" expanded="true" />
+                <element signature="e#5430#5438#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zkTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="zkTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/scistor/process/zkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+            <state relative-caret-position="371">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -216,13 +185,13 @@
         <option value="$PROJECT_DIR$/src/main/java/main1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/scistor/process/thrift/server/StartSlaveServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/flumeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/main1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/threadPoolTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/scistor/process/zkTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java" />
       </list>
     </option>
   </component>
@@ -630,15 +599,16 @@
       <workItem from="1510194777487" duration="1920000" />
       <workItem from="1510292124341" duration="16843000" />
       <workItem from="1510535486475" duration="24053000" />
-      <workItem from="1510630143974" duration="17587000" />
+      <workItem from="1510630143974" duration="18277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110749000" />
+    <option name="totallyTimeSpent" value="111439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -648,7 +618,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39873418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39873418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1030,19 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="107" column="44" lean-forward="false" selection-start-line="107" selection-start-column="44" selection-end-line="107" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#949#955#0" expanded="true" />
-            <element signature="e#1515#1521#0" expanded="true" />
-            <element signature="e#5246#5254#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/scistor/process/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1095,9 +1052,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/scistor/process/zkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="78" lean-forward="true" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
+        <state relative-caret-position="371">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/scistor/operator/DataParserOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="111" column="21" lean-forward="true" selection-start-line="111" selection-start-column="21" selection-end-line="111" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#949#955#0" expanded="true" />
+            <element signature="e#1552#1558#0" expanded="true" />
+            <element signature="e#5430#5438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

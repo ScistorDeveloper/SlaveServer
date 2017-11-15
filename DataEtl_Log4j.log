@@ -763,4 +763,638 @@ INFO pool-2-thread-1 com.scistor.operator.GeneratePasswordBook - producer 开始
  INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
  INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
  INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0025c, negotiated timeout = 40000
+ INFO main com.scistor.process.thrift.server.StartSlaveServer - thrift transport init finished...
+ INFO main com.scistor.process.thrift.server.StartSlaveServer - thrift nio channel selector  init finished...
+ INFO main com.scistor.process.thrift.server.StartSlaveServer - ip:host send to zk
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:host.name=amd-PC
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.7.0_80
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.home=C:\Program Files\Java\jdk1.7.0_80\jre
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=C:\Program Files\Java\jdk1.7.0_80\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jfxrt.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_80\jre\lib\rt.jar;F:\HScode\SlaveServer\target\classes;C:\Users\Administrator\.m2\repository\org\apache\thrift\libthrift\0.9.3\libthrift-0.9.3.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.4.1\httpclient-4.4.1.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.1\httpcore-4.4.1.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-log4j12\1.7.21\slf4j-log4j12-1.7.21.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-pool2\2.4.2\commons-pool2-2.4.2.jar;C:\Users\Administrator\.m2\repository\redis\clients\jedis\2.7.2\jedis-2.7.2.jar;C:\Users\Administrator\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Administrator\.m2\repository\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar;C:\Users\Administrator\.m2\repository\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar;C:\Users\Administrator\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Administrator\.m2\repository\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar;C:\Users\Administrator\.m2\repository\org\apache\zookeeper\zookeeper\3.4.9\zookeeper-3.4.9.jar;C:\Users\Administrator\.m2\repository\jline\jline\0.9.94\jline-0.9.94.jar;C:\Users\Administrator\.m2\repository\io\netty\netty\3.10.5.Final\netty-3.10.5.Final.jar;C:\Users\Administrator\.m2\repository\org\apache\flume\flume-ng-sdk\1.2.0\flume-ng-sdk-1.2.0.jar;C:\Users\Administrator\.m2\repository\org\apache\avro\avro\1.6.3\avro-1.6.3.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.8.8\jackson-core-asl-1.8.8.jar;C:\Users\Administrator\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.8.8\jackson-mapper-asl-1.8.8.jar;C:\Users\Administrator\.m2\repository\com\thoughtworks\paranamer\paranamer\2.3\paranamer-2.3.jar;C:\Users\Administrator\.m2\repository\org\xerial\snappy\snappy-java\1.0.4.1\snappy-java-1.0.4.1.jar;C:\Users\Administrator\.m2\repository\org\apache\avro\avro-ipc\1.6.3\avro-ipc-1.6.3.jar;C:\Users\Administrator\.m2\repository\org\mortbay\jetty\jetty\6.1.26\jetty-6.1.26.jar;C:\Users\Administrator\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\Administrator\.m2\repository\org\jboss\netty\netty\3.2.7.Final\netty-3.2.7.Final.jar;C:\Users\Administrator\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.1\commons-io-2.1.jar;C:\Users\Administrator\.m2\repository\org\mortbay\jetty\servlet-api\2.5-20110124\servlet-api-2.5-20110124.jar;C:\Users\Administrator\.m2\repository\org\apache\kafka\kafka_2.10\0.8.2.1\kafka_2.10-0.8.2.1.jar;C:\Users\Administrator\.m2\repository\com\yammer\metrics\metrics-core\2.2.0\metrics-core-2.2.0.jar;C:\Users\Administrator\.m2\repository\org\scala-lang\scala-library\2.10.4\scala-library-2.10.4.jar;C:\Users\Administrator\.m2\repository\org\apache\kafka\kafka-clients\0.8.2.1\kafka-clients-0.8.2.1.jar;C:\Users\Administrator\.m2\repository\net\jpountz\lz4\lz4\1.2.0\lz4-1.2.0.jar;C:\Users\Administrator\.m2\repository\net\sf\jopt-simple\jopt-simple\3.2\jopt-simple-3.2.jar;C:\Users\Administrator\.m2\repository\com\101tec\zkclient\0.3\zkclient-0.3.jar;C:\Users\Administrator\.m2\repository\com\alibaba\fastjson\1.2.7\fastjson-1.2.7.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2017.2.5\lib\idea_rt.jar
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=C:\Program Files\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;F:\apache-maven-3.3.3\bin;C:\Program Files\Git\cmd;.
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 7
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:os.version=6.1
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.name=Administrator
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\Administrator
+ INFO main org.apache.zookeeper.ZooKeeper - Client environment:user.dir=F:\HScode\SlaveServer
+ INFO main org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=300 watcher=com.scistor.operator.ZookeeperOperator$1@58adab12
+ INFO main-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO main-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO main-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02b6, negotiated timeout = 4000
+ INFO main-EventThread com.scistor.operator.ZookeeperOperator - ZooKeeper:172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 connected... 
+ INFO main-EventThread com.scistor.operator.ZookeeperOperator - event.type == None
+ INFO main com.scistor.operator.ZookeeperOperator - check path done ,path exist /HS/slave/172.16.1.153:8089
+ INFO main com.scistor.operator.ZookeeperOperator - znode[/HS/slave/172.16.1.153:8089] is exist
+ INFO main com.scistor.operator.ZookeeperOperator - save slave info on zk,info==/HS/slave/172.16.1.153:8089 /HS/slave/172.16.1.153:8089
+ INFO main com.scistor.process.thrift.server.StartSlaveServer - server starting...
+ INFO pool-1-thread-1 com.scistor.process.thrift.service.SlaveServiceImpl - this is a machine include consumer
+ INFO pool-1-thread-1 com.scistor.operator.DataParserOperator - got filedir is E:\\Project1\\HS\\02 数据资料\\170811
+ ERROR pool-1-thread-1 com.scistor.operator.ZookeeperOperator - path does not exist /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - upload satus /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - save slave info on zk,info==/HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849 5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ ERROR pool-1-thread-1 com.scistor.operator.ZookeeperOperator - path does not exist /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - upload satus /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - save slave info on zk,info==/HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce producing flag
+ INFO pool-2-thread-1 com.scistor.process.thrift.service.HandleNewTask - process com.scistor.operator.GeneratePasswordBook
+ INFO 有返回值的线程 com.scistor.process.thrift.service.HandleNewTask - process com.scistor.operator.GeneratePasswordBook
+ INFO pool-2-thread-1 org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	block.on.buffer.full = true
+	retry.backoff.ms = 100
+	buffer.memory = 33554432
+	batch.size = 16384
+	metrics.sample.window.ms = 30000
+	metadata.max.age.ms = 300000
+	receive.buffer.bytes = 32768
+	timeout.ms = 30000
+	max.in.flight.requests.per.connection = 5
+	bootstrap.servers = [172.16.18.228:9092, 172.16.18.229:9092, 172.16.18.234:9092]
+	metric.reporters = []
+	client.id = 
+	compression.type = none
+	retries = 0
+	max.request.size = 1048576
+	send.buffer.bytes = 131072
+	acks = 1
+	reconnect.backoff.ms = 10
+	linger.ms = 0
+	metrics.num.samples = 2
+	metadata.fetch.timeout.ms = 60000
+
+ INFO Thread-4 com.scistor.operator.DataParserOperator - parse operation got 6778 files
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Verifying properties
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property auto.commit.interval.ms is overridden to 5000
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property auto.offset.reset is overridden to smallest
+ WARN 有返回值的线程 kafka.utils.VerifiableProperties - Property enable.auto.commit is not valid
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property group.id is overridden to HS
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property zookeeper.connect is overridden to 172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property zookeeper.session.timeout.ms is overridden to 86400000
+ INFO 有返回值的线程 kafka.utils.VerifiableProperties - Property zookeeper.sync.time.ms is overridden to 5000
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Connecting to zookeeper instance at 172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=org.I0Itec.zkclient.ZkClient@44d88759
+ INFO ZkClient-EventThread-34-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Starting ZkClient event thread.
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0025e, negotiated timeout = 40000
+ INFO 有返回值的线程-EventThread org.I0Itec.zkclient.ZkClient - zookeeper state changed (SyncConnected)
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], starting auto committer every 5000 ms
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], begin registering consumer HS_amd-PC-1510725509404-44f526bb in ZK
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], end registering consumer HS_amd-PC-1510725509404-44f526bb in ZK
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], starting watcher executor thread for consumer HS_amd-PC-1510725509404-44f526bb
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], begin rebalancing consumer HS_amd-PC-1510725509404-44f526bb try #0
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping leader finder thread
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping all fetchers
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] All connections stopped
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Cleared all relevant queues for this fetcher
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Cleared the data chunks in all the consumer message iterators
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Committing all offsets after clearing the fetcher queues
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Releasing partition ownership
+ INFO 有返回值的线程 kafka.consumer.RangeAssignor - Consumer HS_amd-PC-1510725509404-44f526bb rebalancing the following partitions: ArrayBuffer() for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849 with consumers: List(HS_amd-PC-1510725509404-44f526bb-0)
+ WARN 有返回值的线程 kafka.consumer.RangeAssignor - No broker partitions consumed by consumer thread HS_amd-PC-1510725509404-44f526bb-0 for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Consumer HS_amd-PC-1510725509404-44f526bb selected partitions : 
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Starting 
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], end rebalancing consumer HS_amd-PC-1510725509404-44f526bb try #0
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@3905841f
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@7d3a6832
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO 有返回值的线程 com.scistor.operator.utils.ZKOperator - Getting living slaves in zookeeper...
+ INFO 有返回值的线程-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO 有返回值的线程-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO 有返回值的线程-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0025f, negotiated timeout = 40000
+ INFO 有返回值的线程-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206dc, negotiated timeout = 40000
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206dc closed
+ INFO 有返回值的线程-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206dc
+ WARN pool-2-thread-1 org.apache.kafka.clients.producer.ProducerConfig - The configuration request.required.acks = null was supplied but isn't a known config.
+ WARN pool-2-thread-1 org.apache.kafka.clients.producer.ProducerConfig - The configuration producer.type = null was supplied but isn't a known config.
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4423fc17
+ INFO ZkClient-EventThread-12532-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Starting ZkClient event thread.
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00260, negotiated timeout = 30000
+ INFO pool-2-thread-1-EventThread org.I0Itec.zkclient.ZkClient - zookeeper state changed (SyncConnected)
+ INFO pool-2-thread-1 kafka.admin.AdminUtils$ - Topic creation {"version":1,"partitions":{"2":[2],"1":[1],"0":[3]}}
+ INFO ZkClient-EventThread-12532-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Terminate ZkClient event thread.
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00260 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00260
+ INFO ZkClient-EventThread-34-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Topic info for path /brokers/topics/5d1434d9-0e20-4d91-a3cd-b5078a7ef849 changed to {"version":1,"partitions":{"2":[2],"1":[1],"0":[3]}}, triggering rebalance
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], begin rebalancing consumer HS_amd-PC-1510725509404-44f526bb try #0
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@77e2aac6
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206dd, negotiated timeout = 40000
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping leader finder thread
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Shutting down
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Stopped 
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Shutdown completed
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping all fetchers
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] All connections stopped
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Cleared all relevant queues for this fetcher
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Cleared the data chunks in all the consumer message iterators
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Committing all offsets after clearing the fetcher queues
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Releasing partition ownership
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.RangeAssignor - Consumer HS_amd-PC-1510725509404-44f526bb rebalancing the following partitions: ArrayBuffer(0, 1, 2) for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849 with consumers: List(HS_amd-PC-1510725509404-44f526bb-0)
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.RangeAssignor - HS_amd-PC-1510725509404-44f526bb-0 attempting to claim partition 0
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.RangeAssignor - HS_amd-PC-1510725509404-44f526bb-0 attempting to claim partition 1
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.RangeAssignor - HS_amd-PC-1510725509404-44f526bb-0 attempting to claim partition 2
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], HS_amd-PC-1510725509404-44f526bb-0 successfully owned partition 1 for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], HS_amd-PC-1510725509404-44f526bb-0 successfully owned partition 2 for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], HS_amd-PC-1510725509404-44f526bb-0 successfully owned partition 0 for topic 5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], Consumer HS_amd-PC-1510725509404-44f526bb selected partitions : 5d1434d9-0e20-4d91-a3cd-b5078a7ef849:0: fetched offset = -1: consumed offset = -1,5d1434d9-0e20-4d91-a3cd-b5078a7ef849:1: fetched offset = -1: consumed offset = -1,5d1434d9-0e20-4d91-a3cd-b5078a7ef849:2: fetched offset = -1: consumed offset = -1
+ INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], end rebalancing consumer HS_amd-PC-1510725509404-44f526bb try #0
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Starting 
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to HS
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to 172.16.18.228:9092,172.16.18.229:9092,172.16.18.234:9092
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:172.16.18.228,port:9092 with correlation id 0 for 1 topic(s) Set(5d1434d9-0e20-4d91-a3cd-b5078a7ef849)
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.producer.SyncProducer - Connected to 172.16.18.228:9092 for producing
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.producer.SyncProducer - Disconnecting from 172.16.18.228:9092
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1], Starting 
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3], Starting 
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2], Starting 
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Added fetcher for partitions ArrayBuffer([[5d1434d9-0e20-4d91-a3cd-b5078a7ef849,1], initOffset -1 to broker id:1,host:172.16.18.228,port:9092] , [[5d1434d9-0e20-4d91-a3cd-b5078a7ef849,2], initOffset -1 to broker id:2,host:172.16.18.229,port:9092] , [[5d1434d9-0e20-4d91-a3cd-b5078a7ef849,0], initOffset -1 to broker id:3,host:172.16.18.234,port:9092] )
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206dd closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206dd
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@3d5d0af5
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206de, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 5000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206de closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206de
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@249d97f0
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206df, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206df closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206df
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@1c835941
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02b7, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 10000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02b7 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02b7
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@10b4226c
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e0, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e0 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e0
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@7b6e8c1e
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00261, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00261 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00261
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@4f4570b6
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00262, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 15000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00262 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00262
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@2ebb4356
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02b8, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02b8 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02b8
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6d0d669b
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e1, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 20000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e1 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e1
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@77e30447
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00263, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00263 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00263
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@39f6dd81
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02b9, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02b9 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02b9
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6844226c
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e2, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 25000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e2 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e2
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6ccf55d6
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00264, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00264 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00264
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@20403038
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00265, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00265 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00265
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6bb9e531
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02ba, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02ba closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02ba
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@21258b2b
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00266, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00266 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00266
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@2bb7ea24
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02bb, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 30000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02bb closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02bb
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@22ec9fda
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00267, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00267 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00267
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@8c9dea8
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02bc, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 35000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02bc closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02bc
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6c27980c
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e3, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e3 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e3
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@63bb03c
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00268, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 40000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00268 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00268
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@428942d5
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02bd, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02bd closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02bd
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@597bfb42
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e00269, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e00269 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e00269
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@2bd4b6b5
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02be, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02be closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02be
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@144c3df1
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e4, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 45000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e4 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e4
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@7e74e774
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02bf, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02bf closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02bf
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@97124ad
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c0, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c0 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c0
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@7ee8d54b
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e5, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e5 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e5
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@4d05d7
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e6, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 50000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e6 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e6
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@6a973ded
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0026a, negotiated timeout = 40000
+ WARN kafka-producer-network-thread | producer-1 org.apache.kafka.common.network.Selector - Error in I/O with /172.16.18.228
+ java.io.EOFException
+	at org.apache.kafka.common.network.NetworkReceive.readFrom(NetworkReceive.java:62)
+	at org.apache.kafka.common.network.Selector.poll(Selector.java:248)
+	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:192)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:191)
+	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:122)
+	at java.lang.Thread.run(Thread.java:745)
+INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0026a closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0026a
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@76caf9e1
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e7, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 55000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e7 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e7
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@33f8f805
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e8, negotiated timeout = 40000
+ INFO Thread-242 com.scistor.operator.GeneratePasswordBook - 已经在Kafka topic:[5d1434d9-0e20-4d91-a3cd-b5078a7ef849], 消费一条数据:[test23_60]
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e8 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e8
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@51e08302
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c1, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 60000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c1 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c1
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@21a6a
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c2, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c2 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c2
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@7d13b814
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c3, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c3 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c3
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@15005743
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206e9, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 65000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206e9 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206e9
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@72ae96b0
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206ea, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206ea closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206ea
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@34d1f091
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0026b, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 70000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0026b closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0026b
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@1997c141
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c4, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c4 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c4
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@3bb639f4
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206eb, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 75000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206eb closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206eb
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@3beefdf6
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206ec, negotiated timeout = 40000
+ ERROR Thread-4 org.apache.flume.api.FailoverRpcClient - Failed to send event: 
+ org.jboss.netty.channel.ChannelException: Failed to create a selector.
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.openSelector(AbstractNioSelector.java:362)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.<init>(AbstractNioSelector.java:100)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.<init>(AbstractNioWorker.java:52)
+	at org.jboss.netty.channel.socket.nio.NioWorker.<init>(NioWorker.java:45)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.newWorker(NioWorkerPool.java:44)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.newWorker(NioWorkerPool.java:28)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool.init(AbstractNioWorkerPool.java:80)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.<init>(NioWorkerPool.java:39)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.<init>(NioWorkerPool.java:33)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory.<init>(NioClientSocketChannelFactory.java:151)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory.<init>(NioClientSocketChannelFactory.java:116)
+	at org.apache.flume.api.NettyAvroRpcClient.connect(NettyAvroRpcClient.java:106)
+	at org.apache.flume.api.NettyAvroRpcClient.connect(NettyAvroRpcClient.java:93)
+	at org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:507)
+	at org.apache.flume.api.RpcClientFactory.getInstance(RpcClientFactory.java:88)
+	at org.apache.flume.api.FailoverRpcClient.getNextClient(FailoverRpcClient.java:264)
+	at org.apache.flume.api.FailoverRpcClient.getClient(FailoverRpcClient.java:125)
+	at org.apache.flume.api.FailoverRpcClient.append(FailoverRpcClient.java:159)
+	at com.scistor.operator.FlumeClientOperator.sendDataToFlume(FlumeClientOperator.java:54)
+	at com.scistor.operator.DataParserOperator.dataParse(DataParserOperator.java:104)
+	at com.scistor.operator.DataParserOperator.run(DataParserOperator.java:48)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Unable to establish loopback connection
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:125)
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:69)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.nio.ch.PipeImpl.<init>(PipeImpl.java:141)
+	at sun.nio.ch.SelectorProviderImpl.openPipe(SelectorProviderImpl.java:50)
+	at java.nio.channels.Pipe.open(Pipe.java:150)
+	at sun.nio.ch.WindowsSelectorImpl.<init>(WindowsSelectorImpl.java:127)
+	at sun.nio.ch.WindowsSelectorProvider.openSelector(WindowsSelectorProvider.java:44)
+	at java.nio.channels.Selector.open(Selector.java:227)
+	at org.jboss.netty.channel.socket.nio.SelectorUtil.open(SelectorUtil.java:63)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.openSelector(AbstractNioSelector.java:360)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:184)
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:97)
+	... 31 more
+ERROR Thread-4 com.scistor.operator.DataParserOperator - 解析数据发送到FLUME错误，数据为：message[[:]]success[[--]]action_type[[:]]GET[[--]]Host[[:]]isub.snssdk.com[[--]]url[[:]]/2/user/info/?abc=true&iid=13415325255&device_id=13806339519&ac=wifi&channel=xiaomi&aid=13&app_name=news_article&version_code=630&version_name=6.3.0&device_platform=android&ab_version=152339%2C160530%2C145816%2C156293%2C157646%2C158751%2C159672%2C160106%2C158054%2C159918%2C158957%2C159262%2C155243%2C151126%2C156286%2C157002%2C155247%2C159170%2C134128%2C156853%2C152026%2C125174%2C158273%2C160291%2C156262%2C149047%2C157722%2C157295%2C31643%2C160342%2C160521%2C131207%2C145585%2C155105%2C152583%2C160240%2C156993%2C159250%2C151118&ab_client=a1%2Cc4%2Ce1%2Cf2%2Cg2%2Cf7&ab_feature=94563%2C102749&abflag=3&ssmix=a&device_type=2014813&device_brand=Xiaomi&language=zh&os_api=19&os_version=4.4.4&uuid=869437025340542&openudid=d83beae99f7f0af3&manifest_version_code=630&resolution=720*1280&dpi=320&update_version_code=6304&_rticket=1502455157186&plugin=2431
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206ec closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206ec
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@527d7a66
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0026c, negotiated timeout = 40000
+ ERROR Thread-4 org.apache.flume.api.FailoverRpcClient - Failed to send event: 
+ org.jboss.netty.channel.ChannelException: Failed to create a selector.
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.openSelector(AbstractNioSelector.java:362)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.<init>(AbstractNioSelector.java:100)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.<init>(AbstractNioWorker.java:52)
+	at org.jboss.netty.channel.socket.nio.NioWorker.<init>(NioWorker.java:45)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.newWorker(NioWorkerPool.java:44)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.newWorker(NioWorkerPool.java:28)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorkerPool.init(AbstractNioWorkerPool.java:80)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.<init>(NioWorkerPool.java:39)
+	at org.jboss.netty.channel.socket.nio.NioWorkerPool.<init>(NioWorkerPool.java:33)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory.<init>(NioClientSocketChannelFactory.java:151)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketChannelFactory.<init>(NioClientSocketChannelFactory.java:116)
+	at org.apache.flume.api.NettyAvroRpcClient.connect(NettyAvroRpcClient.java:106)
+	at org.apache.flume.api.NettyAvroRpcClient.connect(NettyAvroRpcClient.java:93)
+	at org.apache.flume.api.NettyAvroRpcClient.configure(NettyAvroRpcClient.java:507)
+	at org.apache.flume.api.RpcClientFactory.getInstance(RpcClientFactory.java:88)
+	at org.apache.flume.api.FailoverRpcClient.getNextClient(FailoverRpcClient.java:264)
+	at org.apache.flume.api.FailoverRpcClient.getClient(FailoverRpcClient.java:125)
+	at org.apache.flume.api.FailoverRpcClient.append(FailoverRpcClient.java:159)
+	at com.scistor.operator.FlumeClientOperator.sendDataToFlume(FlumeClientOperator.java:54)
+	at com.scistor.operator.DataParserOperator.dataParse(DataParserOperator.java:104)
+	at com.scistor.operator.DataParserOperator.run(DataParserOperator.java:48)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Unable to establish loopback connection
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:125)
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:69)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.nio.ch.PipeImpl.<init>(PipeImpl.java:141)
+	at sun.nio.ch.SelectorProviderImpl.openPipe(SelectorProviderImpl.java:50)
+	at java.nio.channels.Pipe.open(Pipe.java:150)
+	at sun.nio.ch.WindowsSelectorImpl.<init>(WindowsSelectorImpl.java:127)
+	at sun.nio.ch.WindowsSelectorProvider.openSelector(WindowsSelectorProvider.java:44)
+	at java.nio.channels.Selector.open(Selector.java:227)
+	at org.jboss.netty.channel.socket.nio.SelectorUtil.open(SelectorUtil.java:63)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.openSelector(AbstractNioSelector.java:360)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:484)
+	at sun.nio.ch.Net.connect(Net.java:476)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:675)
+	at java.nio.channels.SocketChannel.open(SocketChannel.java:184)
+	at sun.nio.ch.PipeImpl$Initializer.run(PipeImpl.java:97)
+	... 31 more
+ERROR Thread-4 com.scistor.operator.DataParserOperator - 解析数据发送到FLUME错误，数据为：session_id[[:]]4bd5f53b-73e1-3515-a680-69a625ab76a0_shop_android_1502454411830[[--]]activity_starttime[[:]]1502455233197[[--]]location[[:]]101103[[--]]Host[[:]] sc.appvipshop.com[[--]]Content-Length[[:]] 4434[[--]]status_descrit[[:]]null[[--]]userid[[:]]18831891110[[--]]app_version[[:]]8.5.17.3.1[[--]]repeat[[:]]0[[--]]warehouse[[:]]VIP_BJ[[--]]status[[[[:]]]][[--]]Connection[[:]] Keep-Alive[[--]]app_name[[:]]shop_android[[--]]user_class[[:]]C2-4[[--]]activity_propety[[:]]{"page":"商品列表页","goodslist":"1566685_261681111_111_1_2184,1566685_261593889_111_1_2184,1566685_261681108_112_1_2449,1566685_261593715_112_1_2449,1566685_261593887_113_1_2603,1566685_261593714_113_1_2603,1566685_261593876_114_1_1029,1566685_261593886_114_1_1029,1566685_261593747_115_1_1033,1566685_261681106_115_1_1033,1566685_261681105_116_1_1578,1566685_261593881_116_1_1578,1566685_261593883_117_1_1115,1566685_261681104_117_1_1115,1566685_261593895_118_1_8416,1566685_261681118_118_1_8416,1566685_261681117_119_1_7950,1566685_261681116_119_1_7950,1566685_261593862_120_1_12384,1566685_261593894_120_1_12384,1566685_261681111_121_1_5580,1566685_261681114_121_1_5580,1566685_261681101_122_2_3788,1566685_261681094_122_2_3788,1566685_261593794_123_1_1966,1566685_261607408_123_1_1966,1566685_261593742_124_1_2099,1566685_261681110_124_1_2099,1566685_261593857_125_2_5625,1566685_261594065_125_2_5625,1566685_261681103_126_2_6917,1566685_261593781_126_2_6917,1566685_261651435_127_2_9711,1566685_261594064_127_2_9711,1566685_261593835_128_2_5618,1566685_261593725_128_2_5618,1566685_261593686_129_2_6157,1566685_261651438_129_2_6157,1566685_261607416_130_2_5395,1566685_261594012_130_2_5395,1566685_261593847_131_2_5942,1566685_261607407_131_2_5942,1566685_261593790_132_2_6430,1566685_261651448_132_2_6430,1566685_261593873_133_2_10644,1566685_261593884_133_2_10644,1566685_261607395_134_2_11146,1566685_261593865_134_2_11146,1566685_261593754_135_2_9255,1566685_261593741_135_2_9255,1566685_261651442_136_1_4270,1566685_261593688_136_1_4270,1566685_261681086_137_1_17092,1566685_261593890_137_1_17092,1566685_261593843_138_1_20803,1566685_261594052_138_1_20803,1566685_261593860_139_1_20629,1566685_261681088_139_1_20629,1566685_261593892_140_1_8936,1566685_261681097_140_1_8936,1566685_261607404_141_1_4850,1566685_261594001_141_1_4850,1566685_261593880_142_2_7166,1566685_261593898_142_2_7166,1566685_261593739_143_2_7129,1566685_261593879_143_2_7129,1566685_261607409_144_2_7503,1566685_261593792_144_2_7503,1566685_261593833_145_2_9032,1566685_261651446_145_2_9032,1566685_261593850_146_2_7252,1566685_261593820_146_2_7252,1566685_261593770_147_1_36044,1566685_261593819_147_1_36044,1566685_261593734_148_2_40693,1566685_261593967_148_2_40693,1566685_261593976_149_2_40208,1566685_261593690_149_2_40208,1566685_261593703_150_2_4612,1566685_261593700_150_2_4612,1566685_261593702_151_2_4662,1566685_261593681_151_2_4662,1566685_261594022_152_2_2691,1566685_261594019_152_2_2691,1566685_261593979_153_1_2934,1566685_261594017_153_1_2934,1566685_261593877_154_1_2775,1566685_261593942_154_1_2775,1566685_261681098_155_1_3313,1566685_261681113_155_1_3313,1566685_261594060_156_1_3414,1566685_261607411_156_1_3414,1566685_261593791_157_1_3003,1566685_261651433_157_1_3003,1566685_261593856_158_1_3116,1566685_261593782_158_1_3116,1566685_261593829_159_1_2748,1566685_261593774_159_1_2748,1566685_261594038_160_2_9059,1566685_261594029_160_2_9059,1566685_261593861_161_2_9013,1566685_261593872_161_2_9013,1566685_261594040_162_2_10837,1566685_261607413_162_2_10837,1566685_261594066_163_2_5663,1566685_261594039_163_2_5663,1566685_261594030_164_2_9739,1566685_261593970_164_2_9739,1566685_261651441_165_2_9444,1566685_261593795_165_2_9444,1566685_261593904_166_2_6380,1566685_261594039_166_2_6380,1566685_261593845_167_3_4858,1566685_261607410_167_3_4858,1566685_261593782_168_1_5033,1566685_261593795_168_1_5033,1566685_261593937_169_1_4231,1566685_261594030_169_1_4231,1566685_261593954_170_1_2213,1566685_261593970_170_1_2213"}[[--]]Authorization[[:]] OAuth api_sign=937060fa4fa08ef450d90bdd27067e1b53bd65b1[[--]]vipruid[[:]]205229746[[--]]action_type[[:]]POST[[--]]activity_endtime[[:]]null[[--]]page_id[[:]]page_commodity_list_1502455061337[[--]]user_label[[:]]3105,310502[[--]]activity[[:]]active_te_goods_expose[[--]]user_group[[:]]6120_Android:4个人群同一条菜单[[--]]User-Agent[[:]] gzip[[--]]Accept-Encoding[[:]] gzip[[--]]service[[:]]mobile.activityinfo.logger[[--]]mid[[:]]4bd5f53b-73e1-3515-a680-69a625ab76a0[[--]]channel[[:]]1[[--]]Content-Type[[:]] application/x-www-form-urlencoded;charset=UTF-8
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0026c closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0026c
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@2fc9f464
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c5, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 80000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c5 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c5
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@4324bea9
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206ed, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206ed closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206ed
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@4725b757
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c6, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c6 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c6
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@26f5992
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.229/172.16.18.229:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.229/172.16.18.229:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.229:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.229/172.16.18.229:2999, sessionid = 0x25f860110e0026d, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 85000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0026d closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0026d
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@8d6fb97
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c7, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c7 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c7
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@3d142a59
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206ee, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.DataParserOperator - Thread-4 has been parsed 90000 lines data!
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206ee closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206ee
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@1a2e9009
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c8, negotiated timeout = 40000
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c8 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c8
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@5cca55b
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.234/172.16.18.234:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.234/172.16.18.234:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.234:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.234/172.16.18.234:2999, sessionid = 0x35f860c7d8206ef, negotiated timeout = 40000
+ INFO Thread-4 com.scistor.operator.ZookeeperOperator - Update zk result, taskId:[5d1434d9-0e20-4d91-a3cd-b5078a7ef849], ZK_NODE_PATH:[/HS/tasks/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/172.16.1.153:8089/com.scistor.operator.DataParserOperator], RESULT:[{"errorInfo":"data parse succ,totle parsed 94896line data, and neglected 2017 lines data!! data ","finished":true,"mainClass":"com.scistor.operator.DataParserOperator","taskId":"5d1434d9-0e20-4d91-a3cd-b5078a7ef849"}]
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - check path done ,path exist /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - path deleted /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce
+ ERROR pool-1-thread-1 com.scistor.operator.ZookeeperOperator - path does not exist /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/is_produce
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x35f860c7d8206ef closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x35f860c7d8206ef
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=86400000 watcher=com.scistor.operator.utils.ZKOperator$1@197101a5
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO pool-2-thread-1-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02c9, negotiated timeout = 40000
+ INFO pool-2-thread-1 com.scistor.operator.GeneratePasswordBook - 数据生产结束，退出
+ INFO pool-2-thread-1 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02c9 closed
+ INFO pool-2-thread-1-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02c9
+ INFO pool-2-thread-1 com.scistor.operator.ZookeeperOperator - Update zk result, taskId:[5d1434d9-0e20-4d91-a3cd-b5078a7ef849], ZK_NODE_PATH:[/HS/tasks/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/172.16.1.153:8089/com.scistor.operator.GeneratePasswordBook], RESULT:[{"errorInfo":"data parse succ","finished":true,"mainClass":"com.scistor.operator.GeneratePasswordBook","taskId":"5d1434d9-0e20-4d91-a3cd-b5078a7ef849"}]
+ INFO pool-1-thread-1 com.scistor.process.thrift.service.SlaveServiceImpl - 总共用时:0h25m21s
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - check path done ,path exist /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO pool-1-thread-1 com.scistor.operator.ZookeeperOperator - path deleted /HS/slave/172.16.1.153:8089/5d1434d9-0e20-4d91-a3cd-b5078a7ef849
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], ZKConsumerConnector shutting down
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping leader finder thread
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Shutting down
+ INFO HS_amd-PC-1510725509404-44f526bb-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Stopped 
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [HS_amd-PC-1510725509404-44f526bb-leader-finder-thread], Shutdown completed
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] Stopping all fetchers
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1], Shutting down
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1 kafka.consumer.SimpleConsumer - Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1], Stopped 
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-1], Shutdown completed
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3], Shutting down
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3 kafka.consumer.SimpleConsumer - Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3], Stopped 
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-3], Shutdown completed
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2], Shutting down
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2 kafka.consumer.SimpleConsumer - Reconnect due to socket error: java.nio.channels.ClosedByInterruptException
+ INFO ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2], Stopped 
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-HS_amd-PC-1510725509404-44f526bb-0-2], Shutdown completed
+ INFO 有返回值的线程 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1510725509442] All connections stopped
+ INFO ZkClient-EventThread-34-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Terminate ZkClient event thread.
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0025e closed
+ INFO 有返回值的线程-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0025e
+ INFO 有返回值的线程 kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], ZKConsumerConnector shutdown completed in 139 ms
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Session: 0x25f860110e0025f closed
+ INFO 有返回值的线程-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x25f860110e0025f
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@32dc9aa1
+ INFO ZkClient-EventThread-1043980-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Starting ZkClient event thread.
+ INFO 有返回值的线程-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Opening socket connection to server 172.16.18.228/172.16.18.228:2999. Will not attempt to authenticate using SASL (unknown error)
+ INFO 有返回值的线程-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Socket connection established to 172.16.18.228/172.16.18.228:2999, initiating session
+ INFO 有返回值的线程-SendThread(172.16.18.228:2999) org.apache.zookeeper.ClientCnxn - Session establishment complete on server 172.16.18.228/172.16.18.228:2999, sessionid = 0x15f8603980a02ca, negotiated timeout = 30000
+ INFO 有返回值的线程-EventThread org.I0Itec.zkclient.ZkClient - zookeeper state changed (SyncConnected)
+ INFO ZkClient-EventThread-1043980-172.16.18.228:2999,172.16.18.229:2999,172.16.18.234:2999 org.I0Itec.zkclient.ZkEventThread - Terminate ZkClient event thread.
+ INFO 有返回值的线程 org.apache.zookeeper.ZooKeeper - Session: 0x15f8603980a02ca closed
+ INFO 有返回值的线程-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x15f8603980a02ca
+ INFO 有返回值的线程 com.scistor.operator.ZookeeperOperator - Update zk result, taskId:[5d1434d9-0e20-4d91-a3cd-b5078a7ef849], ZK_NODE_PATH:[/HS/tasks/5d1434d9-0e20-4d91-a3cd-b5078a7ef849/172.16.1.153:8089/com.scistor.operator.GeneratePasswordBook], RESULT:[{"errorInfo":"data parse succ","finished":true,"mainClass":"com.scistor.operator.GeneratePasswordBook","taskId":"5d1434d9-0e20-4d91-a3cd-b5078a7ef849"}]
+ WARN Thread-0 org.apache.thrift.server.AbstractNonblockingServer$FrameBuffer - Got an IOException during write!
+ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:492)
+	at org.apache.thrift.transport.TNonblockingSocket.write(TNonblockingSocket.java:165)
+	at org.apache.thrift.server.AbstractNonblockingServer$FrameBuffer.write(AbstractNonblockingServer.java:414)
+	at org.apache.thrift.server.AbstractNonblockingServer$AbstractSelectThread.handleWrite(AbstractNonblockingServer.java:221)
+	at org.apache.thrift.server.TThreadedSelectorServer$SelectorThread.select(TThreadedSelectorServer.java:589)
+	at org.apache.thrift.server.TThreadedSelectorServer$SelectorThread.run(TThreadedSelectorServer.java:541)
+INFO HS_amd-PC-1510725509404-44f526bb_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [HS_amd-PC-1510725509404-44f526bb], stopping watcher executor thread for consumer HS_amd-PC-1510725509404-44f526bb
  

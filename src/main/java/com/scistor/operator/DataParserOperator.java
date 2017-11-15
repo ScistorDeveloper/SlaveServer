@@ -26,6 +26,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
     private static List<File> filelist = new ArrayList<File>();
     private int parsedCount=0;
     private static int neglectedCount = 0;
+    private StringBuilder errorMess;
     public void DataParserOperator(){
     }
     @Override
@@ -59,8 +60,9 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                 throw new RuntimeException(e.toString());
             }
         }
-        TaskResult tr = new TaskResult(task_id,mainclass,true,"data parse succ,totle parsed "+parsedCount + "line data, and neglected " + neglectedCount
+        errorMess.append("data parse succ,totle parsed "+parsedCount + "line data, and neglected " + neglectedCount
                 +" lines data!! data ");
+        TaskResult tr = new TaskResult(task_id,mainclass,true,errorMess.toString());
         try {
             ZookeeperOperator.updateTaskResult(null,task_id,mainclass,tr);
         } catch (Exception e1) {
@@ -106,6 +108,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                     }catch (Exception e){
                         LOG.error("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
                         System.out.println("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
+                        errorMess.append("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
                     }
                     parsedCount ++;
                     if(parsedCount%5000==0){
