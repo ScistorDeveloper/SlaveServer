@@ -8,8 +8,6 @@ import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.zookeeper.KeeperException;
-import org.apache.zookeeper.ZooKeeper;
 
 import java.io.*;
 import java.util.*;
@@ -102,9 +100,12 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                     }
                     //直接发送到flume使用
                     try {
-                        String line = Map2String.transMapToString(data);
-                        FlumeClientOperator.sendDataToFlume(line);
-                        FlumeClientOperator.cleanUp();
+                        String host = data.get("Host");
+                        if (null != host && !"-".equals(host)) {
+                            String line = Map2String.transMapToString(data);
+                            FlumeClientOperator.sendDataToFlume(host+"|| "+line);
+                            FlumeClientOperator.cleanUp();
+                        }
                     }catch (Exception e){
                         LOG.error("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
                         System.out.println("解析数据发送到FLUME错误，数据为："+Map2String.transMapToString(data));
@@ -129,7 +130,7 @@ public class DataParserOperator implements DataParseInterface, Runnable{
      */
     private static Map<String,String> getMap(BufferedReader br) throws Exception {
         String str = null;
-        String url="";
+        String url="-";
         Map<String,String> data = new HashMap<String, String>();
         List<String> line = new ArrayList<String>();
         while((str = br.readLine()) != null)
@@ -176,9 +177,9 @@ public class DataParserOperator implements DataParseInterface, Runnable{
                 data.put("action_type","POST");
                 for (String li : line){
                     if(li.indexOf("[[:]]")>=0 & li.split("\\[\\[:\\]\\]").length>1){
-                        data.put(li.split("\\[\\[:\\]\\]")[0],li.split("\\[\\[:\\]\\]")[1]);
+                        data.put(li.split("\\[\\[:\\]\\]")[0].toLowerCase(),li.split("\\[\\[:\\]\\]")[1]);
                     }else if(li.indexOf(":")>=0 & li.split(":").length>1){
-                        data.put(li.split(":")[0],li.split(":")[1]);
+                        data.put(li.split(":")[0].toLowerCase(),li.split(":")[1]);
                     }
                 }
 

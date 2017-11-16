@@ -2,7 +2,6 @@ package com.scistor.process.thrift.service;
 
 import com.scistor.operator.DataParserOperator;
 import com.scistor.operator.FlumeClientOperator;
-import com.scistor.operator.KafkaConsumerOperator;
 import com.scistor.operator.ZookeeperOperator;
 import com.scistor.utils.ExceptionHandler;
 import org.apache.log4j.Logger;
@@ -10,7 +9,6 @@ import org.apache.thrift.TException;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
@@ -164,6 +162,7 @@ public class SlaveServiceImpl implements SlaveService.Iface {
 	public String updateClassLoader(String componentLocation, String componentName, ByteBuffer componentInfo) throws TException {
 		FileOutputStream fos;
 		try {
+			componentLocation = "/HS/component";
 			File file = new File(componentLocation + File.separator + componentName + "_sub.jar");
 			if (!file.getParentFile().exists()) {
 				file.getParentFile().mkdirs();
